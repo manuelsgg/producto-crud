@@ -6,7 +6,7 @@ SQL SERVER.
 Instrucciones:
 - Ejecutar el archivo empresa.sql en SQL SERVER
 
- - En la carpeta de react/prudctoapp ejecutar:npm install y luego npm run (asergurase que NODE sea versión v20.17.0 )
+ - En la carpeta de react/prudctoapp ejecutar:npm install y luego npm run (asegurese que NODE sea versión v20.17.0 )
 
  - Abrir la carpeta ProductApi y ejecutar ProductApi.sln para el lado del backend
 

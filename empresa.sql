@@ -4,10 +4,13 @@ go
 use empresa
 CREATE TABLE Usuarios (
     UsuarioId INT PRIMARY KEY IDENTITY,
-    Email NVARCHAR(50) NOT NULL,
+    Email NVARCHAR(50) NOT NULL UNIQUE, 
     PasswordHash NVARCHAR(255) NOT NULL,
-    Role NVARCHAR(20) NOT NULL  -- 'profesor' o 'alumno'
+    Role NVARCHAR(20) NOT NULL
 );
+
+ALTER TABLE Usuarios
+ADD CONSTRAINT UQ_Email UNIQUE (Email);
 
 CREATE TABLE Categorias (
     CategoriaId INT PRIMARY KEY IDENTITY,

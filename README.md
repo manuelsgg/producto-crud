@@ -5,7 +5,9 @@ SQL SERVER.
 
 Instrucciones:
 Ejecutar el archivo empresa.sql en SQL SERVER
+
 En la carpeta de react/prudctoapp ejecutar:npm install y luego npm run
+
 Abrir la carpeta ProductApi y ejecutar ProductApi.sln para el lado del backend
 
 Adjunto usuarios:

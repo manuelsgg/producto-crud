@@ -29,8 +29,8 @@ GO
 
 SET IDENTITY_INSERT dbo.Usuarios ON 
 
-INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (1, N'vendedor1', N'$2a$12$9Q0hXZb/NV4SGxTR9WrvBeIMWmy/jA1Wk/mH.MUxdYwAQw7q7oFlG', N'vendedor')
-INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (2, N'cliente1', N'$2a$12$YfuoIKbF.zmMHBBZmjAXn.e.YSBNqMlzxHguYP98IUzpp1irVD9Da', N'cliente')
+INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (1, N'vedendor1@gmail.com', N'$2a$11$PXtUm2CP5iJplZe762zECOan8IEkYTj2zKYm7LU5ECSbpW6Tul2z.', N'vendedor')
+INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (2, N'cliente1@gmail.com', N'$2a$11$PXtUm2CP5iJplZe762zECOan8IEkYTj2zKYm7LU5ECSbpW6Tul2z.', N'cliente')
 SET IDENTITY_INSERT dbo.Usuarios OFF
 GO
 

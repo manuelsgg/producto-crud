@@ -137,11 +137,37 @@ export function ProductoDashboard() {
         navigate('/');
     };
 
+    const handleDoc = () => {
+        navigate('/documento');
+    };
+
+    // Obtener un PDF generado por el documento
+    const generatePdf = async (id) => {
+        try {
+            const response = await axios.get(`${appsettings.apiUrl}/documento/generar-pdf`, {
+                responseType: 'blob',
+                headers: { Authorization: `Bearer ${token}` }
+            });
+            const fileURL = URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = fileURL;
+            link.setAttribute('download', 'productos.pdf'); // Nombre del archivo a descargar
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        } catch (error) {
+            console.error('Error generating PDF:', error);
+        }
+    };
+
 
     return (
         <div className="container">
             <div className="d-flex justify-content-between align-items-center">
                 <h2>Productos | Vendedor</h2>
+                <Button color="success" onClick={handleDoc}>
+                    Entrar a Documentos
+                </Button>
                 <Button color="primary" onClick={handleLogout}>
                     Cerrar Sesión
                 </Button>
@@ -175,13 +201,17 @@ export function ProductoDashboard() {
                             <Button color="danger"
                                     onClick={() => handleDeleteProducto(producto.productoId)}>Eliminar</Button>
                         </td>
+
+
                     </tr>
                 ))}
                 </tbody>
             </table>
 
             <Button color="primary" className="mt-3" onClick={toggleModal}>Agregar Producto</Button>
-
+            <Button color="success" onClick={generatePdf}>
+                DescargarPDF
+            </Button>
 
             <Modal isOpen={modal} toggle={toggleModal}>
                 <ModalHeader toggle={toggleModal}>Agregar Producto</ModalHeader>

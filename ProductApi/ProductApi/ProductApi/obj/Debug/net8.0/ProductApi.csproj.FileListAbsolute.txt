@@ -172,6 +172,12 @@ E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Microsoft.Op
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.Charting.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.Quality.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.Snippets.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.System.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.WPFonts.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\PdfSharp.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -241,6 +247,8 @@ E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\ru\Microsoft
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\de\PdfSharp.resources.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -274,3 +282,4 @@ E:\crud-productos\ProductApi\ProductApi\ProductApi\obj\Debug\net8.0\refint\Produ
 E:\crud-productos\ProductApi\ProductApi\ProductApi\obj\Debug\net8.0\ProductApi.pdb
 E:\crud-productos\ProductApi\ProductApi\ProductApi\obj\Debug\net8.0\ProductApi.genruntimeconfig.cache
 E:\crud-productos\ProductApi\ProductApi\ProductApi\obj\Debug\net8.0\ref\ProductApi.dll
+E:\crud-productos\ProductApi\ProductApi\ProductApi\bin\Debug\net8.0\ProductApi.staticwebassets.runtime.json

@@ -14,7 +14,16 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="PDFsharp" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Archivo\cargaxertica_nueva.xlsx" />
+    <None Include="wwwroot\Archivo\CasoUsoVenta.pdf" />
+    <None Include="wwwroot\Archivo\CasoUsoVentaAgua.pdf" />
+    <None Include="wwwroot\Archivo\CUNFinal.pdf" />
+    <None Include="wwwroot\Archivo\EJEMPLO 1.docx" />
   </ItemGroup>
 
 </Project>

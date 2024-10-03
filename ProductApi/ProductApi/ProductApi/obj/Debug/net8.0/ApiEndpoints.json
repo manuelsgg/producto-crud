@@ -132,6 +132,116 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "GetDocumentos",
+    "RelativePath": "api/Documento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "GetDocumento",
+    "RelativePath": "api/Documento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "ActualizarDocumento",
+    "RelativePath": "api/Documento/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedDocument",
+        "Type": "ProductApi.Models.Documento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "EliminarDocumento",
+    "RelativePath": "api/Documento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "DescargarArchivo",
+    "RelativePath": "api/Documento/{id}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "GenerarPdf",
+    "RelativePath": "api/Documento/generar-pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.DocumentoController",
+    "Method": "SubirDocumento",
+    "RelativePath": "api/Documento/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombreDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ProductApi.Controllers.ProductoController",
     "Method": "GetProductos",
     "RelativePath": "api/Producto",

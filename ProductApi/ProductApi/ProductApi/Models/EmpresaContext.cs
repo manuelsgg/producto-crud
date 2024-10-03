@@ -21,6 +21,8 @@ public partial class EmpresaContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
+    public virtual DbSet<Documento> Documentos { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
 
@@ -60,6 +62,22 @@ public partial class EmpresaContext : DbContext
             entity.Property(e => e.Email).HasMaxLength(50);
             entity.Property(e => e.PasswordHash).HasMaxLength(255);
             entity.Property(e => e.Role).HasMaxLength(20);
+        });
+
+        modelBuilder.Entity<Documento>(entity =>
+        {
+            entity.HasKey(e => e.DocumentoId).HasName("PK__Document__5DDBFC76200B2304");
+
+            entity.Property(e => e.NombreDocumento).HasMaxLength(100);
+            entity.Property(e => e.Tipo).HasMaxLength(50);
+            entity.Property(e => e.Ruta).HasMaxLength(500);
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FechaModificacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+
         });
 
         OnModelCreatingPartial(modelBuilder);

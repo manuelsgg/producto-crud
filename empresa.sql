@@ -4,13 +4,10 @@ go
 use empresa
 CREATE TABLE Usuarios (
     UsuarioId INT PRIMARY KEY IDENTITY,
-    Email NVARCHAR(50) NOT NULL UNIQUE, 
+    Email NVARCHAR(50) NOT NULL,
     PasswordHash NVARCHAR(255) NOT NULL,
-    Role NVARCHAR(20) NOT NULL
+    Role NVARCHAR(20) NOT NULL  -- 'profesor' o 'alumno'
 );
-
-ALTER TABLE Usuarios
-ADD CONSTRAINT UQ_Email UNIQUE (Email);
 
 CREATE TABLE Categorias (
     CategoriaId INT PRIMARY KEY IDENTITY,
@@ -29,8 +26,8 @@ GO
 
 SET IDENTITY_INSERT dbo.Usuarios ON 
 
-INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (1, N'vedendor1@gmail.com', N'$2a$11$PXtUm2CP5iJplZe762zECOan8IEkYTj2zKYm7LU5ECSbpW6Tul2z.', N'vendedor')
-INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (2, N'cliente1@gmail.com', N'$2a$11$PXtUm2CP5iJplZe762zECOan8IEkYTj2zKYm7LU5ECSbpW6Tul2z.', N'cliente')
+INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (1, N'vendedor1', N'$2a$12$9Q0hXZb/NV4SGxTR9WrvBeIMWmy/jA1Wk/mH.MUxdYwAQw7q7oFlG', N'vendedor')
+INSERT dbo.Usuarios (UsuarioId, Email, PasswordHash, Role) VALUES (2, N'cliente1', N'$2a$12$YfuoIKbF.zmMHBBZmjAXn.e.YSBNqMlzxHguYP98IUzpp1irVD9Da', N'cliente')
 SET IDENTITY_INSERT dbo.Usuarios OFF
 GO
 
@@ -50,3 +47,12 @@ INSERT dbo.Productos (ProductoId, CategoriaId, NombreProducto, Precio, UsuarioCr
 SET IDENTITY_INSERT dbo.Productos OFF
 GO
 
+
+CREATE TABLE Documento (
+    DocumentoId INT PRIMARY KEY IDENTITY(1,1), 
+    NombreDocumento NVARCHAR(255) NOT NULL,
+    Tipo NVARCHAR(50) NOT NULL, 
+    Ruta NVARCHAR(500) NOT NULL, 
+    FechaCreacion DATETIME NOT NULL,     
+    FechaModificacion DATETIME NOT NULL 
+);
